@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+  font-family: 'Roboto';
+}
+.nav-container {
+  background-color: #3367d6;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-image {
+  height: 30px;
+}
+
+.search-logo-input-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-image {
+  background-color: #2850a7;
+  border: 2px solid #6697ff;
+  border-right: none;
+  height: 40px;
+  padding: 5px;
+}
+
+.search-input {
+  height: 40px;
+  background-color: #2850a7;
+  border: 2px solid #6697ff;
+  width: 65%;
+  outline: none;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+.no-history-container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.browser-history-list-container {
+  margin: 40px;
+  box-shadow: 5px 5px 15px 15px #ececec;
+  list-style-type: none;
+  padding-left: 0;
+  border-radius: 8px;
+}
+
+.each-history-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.history-item-time {
+  width: 15%;
+  color: #475569;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.history-item-logo-container {
+  width: 8%;
+  margin: 10px;
+}
+
+.history-content-delete-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-title-url-container {
+  margin: 10px;
+}
+
+.history-title {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.history-url {
+  color: #64748b;
+  margin: 5px;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .nav-container {
+    padding-left: 60px;
+  }
+  .search-input {
+    width: 420px;
+  }
+  .history-title-url-container {
+    display: flex;
+    justify-content: center;
+  }
+}
